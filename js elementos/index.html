@@ -18,8 +18,8 @@
       <section id="quartoEUltimoFilho"></section>
     </section>
   </main>
-  
- 
+
+
 </body>
 
 <script >
@@ -35,8 +35,26 @@ whereIam.appendChild(createChild('section','filhoAdotivo'));
 
 let sonOfSon = document.getElementById('primeiroFilhoDoFilho');
 sonOfSon.appendChild(createChild('p','paragraph'));
+sonOfSon.innerHtml = "Boa noite! " + "<br>" + "Sejam bem vindos";
 
-console.log(sonOfSon.parentNode.nextElementSibling);
+
+let pai= document.querySelector('#paiDoPai section');
+
+for (let index = pai.firstElementChild; index !== null; index=index.nextElementSibling){
+  
+  console.log(index);
+
+if(!(index.id === "elementoOndeVoceEsta" || index.id === "primeiroFilhoDoFilho")){
+
+pai.removeChild(index);
+
+}
+}
+
+const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+segundoEUltimoFilhoDoFilho.removeChild();
+
+
 
 </script>
 </html>
