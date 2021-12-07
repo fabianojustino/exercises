@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+    </section>
+  </main>
+  
+ 
+</body>
+
+<script >
+
+  function createChild(typeChild, className){
+    let filho = document.createElement(typeChild);
+    filho.className=(className);
+    return filho;
+  }
+
+let whereIam = document.getElementById('elementoOndeVoceEsta');
+whereIam.appendChild(createChild('section','filhoAdotivo'));
+
+let sonOfSon = document.getElementById('primeiroFilhoDoFilho');
+sonOfSon.appendChild(createChild('p','paragraph'));
+
+console.log(sonOfSon.parentNode.nextElementSibling);
+
+</script>
+</html>
