@@ -1,10 +1,8 @@
 let title = document.querySelector("h1");
 title.innerText = "Indiana Jones"
+title.style.backgroundColor= "#2fc18c"
 
-let tasks = document.querySelectorAll("div");
 
-
-let secondP = document.querySelectorAll("h3");
-secondP[1].style.backgroundColor= "yellow";
-secondP[1].style.color = "black"
+let secondP = document.querySelectorAll('.emergency-tasks');
+secondP[0].firstElementChild.nextElementSibling.children[0].innerText = "segundo quadro inferior esquerdo"
 

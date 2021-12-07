@@ -12,13 +12,13 @@
 #container {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
-  border: 1px solid black;
+ 
 }
 
 #header-container {
   color: black;
   padding: 20px;
-  border: 1px solid black;
+
 }
 
 .emergency-tasks {
